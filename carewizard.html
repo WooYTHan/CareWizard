@@ -64,7 +64,7 @@
                           <div class="card-header" id="headingOne">
                             <h5 class="mb-0">
                              <span data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="option" style="display: inline-block;     width: 278px;"><i class="fa fa-chevron-down" aria-hidden="true"></i>
-                      Care Option 1</span>  <input type="radio" name="one" value="one">
+                      Care Option 1</span>  <input id="radio1" type="radio" name="one" value="one" checked="checked">
 
                             </h5>
 
@@ -185,6 +185,7 @@
 
         <div class="cost col-9">
           <h1>Cost</h1>
+          <h2>The costs you should expect to incur in the future, based on data provided by caregivers and health insurance companies.</h2>
           <div class="row">
             <div class="pic col-4">
               <span class="story">This is the cheapest care choice available. It’s going to cost you approximately <strong>$19,560</strong>/year. The majority of the cost come from <strong>living expenses</strong>. 
@@ -238,6 +239,7 @@
       $( "#mycm" ).click(function() {
       $( "#card2" ).show();
       $( "#card1" ).show();
+      $( "#radio1" ).show();
 
     });
 

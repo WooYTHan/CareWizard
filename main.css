@@ -123,6 +123,7 @@ overflow: none;
   height: 400px;
   background-color: white;
   margin-right: :10px;
+      padding-top: 38px;
   
 }
 .graph{
@@ -133,7 +134,7 @@ overflow: none;
 }
 
 .cost{
-  height: 500px;
+  height: 580px;
   background-color: white;
 box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);  margin-bottom: 30px;
   float: right;
@@ -315,7 +316,6 @@ font-style: normal;
 font-weight: normal;
 line-height: 24px;
 font-size: 14px;
-
 color: #333333;
 
 }
@@ -426,4 +426,8 @@ text-transform: uppercase;
     border-left: 3px solid #10C7C2 !important;
     margin-left: -18px;
     padding-left:18px;
+    }
+
+    #radio1{
+      display: none;
     }
