@@ -5,7 +5,8 @@ body {
 }
 
 .container {
-    margin-top: -70px;
+         margin-top: -176px;
+
 }
 
 .storyimg{
@@ -39,7 +40,7 @@ padding-top:10px;
 
 }
 
-.diagram-text, .text-tl, .table{
+.diagram-text, .text-tl{
   font-family: Karla;
   font-size: 12px;
   fill: #999999;
@@ -176,8 +177,8 @@ padding-right:33px;
 }
 
 #fakeheader{
-  position: fixed;
-    top: -50px;
+    z-index: 0;
+    margin-top: -122px;
 }
 
 label {
@@ -242,6 +243,7 @@ color: #10C7C2;
     background: none !important;
     border: 0px #fff !important;
     padding: 0px;
+        cursor: pointer;
 }
 
 .card{
@@ -367,7 +369,7 @@ text-transform: uppercase;
 color: #999999;
 }
 
-#sortable{
+#sortable,#sortable2{
       padding: 0px !important;
 }
 
@@ -443,7 +445,6 @@ text-transform: uppercase;
 
     #radio1{
       display: none;
-<<<<<<< HEAD
     }
 
     .bg-light {
@@ -502,8 +503,8 @@ a.navbar-brand {
     font-size: 14px;
   }
   .dropdown-item{
+    color: #fff;
+    text-decoration: none;
+    background-color: #10C7C2;
     font-size: 14px !important;
 }
-=======
-    }
->>>>>>> d1f9a4c2224cee0c2de09c0e8f31d48a75974530
