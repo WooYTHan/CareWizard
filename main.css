@@ -7,8 +7,12 @@ body {
     margin-top: -70px;
 }
 
+.storyimg{
+      width: 200px;
+}
+
 h1{
-	font-family: Karla;
+  font-family: Karla;
 font-style: normal;
 font-weight: bold;
 line-height: 29px;
@@ -39,10 +43,10 @@ padding-top:10px;
 }
 
 .domain path{
-	stroke: #fff;
+  stroke: #fff;
 }
 .tick line{
-	stroke: none;
+  stroke: none;
 }
 .line {
   fill: none;
@@ -92,7 +96,7 @@ padding-top:10px;
 
 
 .xAxis text{
-	display: none;
+  display: none;
 }
 
 .xAxis path{
@@ -104,63 +108,60 @@ padding-top:10px;
 }
 
 .filter{
-	height: 500px;
- 	background-color: white;
-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); 	float: left;
- 	position: fixed;
- 	left: 35px;
- 	padding-left:33px;	
-padding-right:33px;	
+  height: 500px;
+  background-color: white;
+box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);  float: left;
+  position: fixed;
+  left: 35px;
+  padding-left:33px;  
+padding-right:33px; 
 overflow: none;
 
 }
 .pic{
-	height: 400px;
-	background-color: white;
- 	box-shadow: 0 5px 15px 0 rgba(233,233,233,.8);
- 	margin-right: :10px;
- 	left: 10px;
- 	
+  height: 400px;
+  background-color: white;
+  margin-right: :10px;
+  
 }
 .graph{
-	height: 400px;
-	background-color: white;
- 	box-shadow: 0 5px 15px 0 rgba(233,233,233,.8);
- 	margin-left:10px;
- 	right: -10px;
+  height: 400px;
+  background-color: white;
+  margin-left:10px;
+  right: -10px;
 }
 
 .cost{
- 	height: 500px;
- 	background-color: white;
-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); 	margin-bottom: 30px;
- 	float: right;
- 	right: -25px;
- 	padding-left:33px;	
-padding-right:33px;	
+  height: 500px;
+  background-color: white;
+box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);  margin-bottom: 30px;
+  float: right;
+  right: -25px;
+  padding-left:33px;  
+padding-right:33px; 
 
 }
 .stress{
-	height: 500px;
-	background-color: white;
-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);	margin-bottom: 30px;
-	float: right;
-	right: -25px;
-	padding-left:33px;	
-padding-right:33px;	
+  height: 500px;
+  background-color: white;
+box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);  margin-bottom: 30px;
+  float: right;
+  right: -25px;
+  padding-left:33px;  
+padding-right:33px; 
 }
 .reflection{
-	height: 500px;
-	background-color: white;
-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);	margin-bottom: 30px;
-	float: right;
-	right: -25px;
-	padding-left:33px;	
-padding-right:33px;	
+  height: 500px;
+  background-color: white;
+box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);  margin-bottom: 30px;
+  float: right;
+  right: -25px;
+  padding-left:33px;  
+padding-right:33px; 
 }
 
 #fakeheader{
-	position: fixed;
+  position: fixed;
     top: -50px;
 }
 
@@ -178,7 +179,7 @@ padding-bottom: 10px;
 }
 
 .option{
-	font-family: Karla;
+  font-family: Karla;
 font-style: normal;
 font-weight: bold;
 line-height: 24px;
@@ -195,6 +196,7 @@ display: block;
 
 .dropdown.bootstrap-select {
     padding-bottom: 25px;
+    display: block;
 }
 .dropdown-item.active, .dropdown-item:active {
     color: #fff;
@@ -203,19 +205,19 @@ display: block;
 }
 
 .fa{
-	color: #C5C5C5;
-	padding-left:10px;
+  color: #C5C5C5;
+  padding-left:10px;
 }
 i.fa.fa-chevron-down {
-	color:#333333;
-	cursor: pointer;
+  color:#333333;
+  cursor: pointer;
 }
 
 i.fa.fa-plus-circle{
-		line-height: 14px;
+    line-height: 14px;
 font-size: 14px;
 color: #10C7C2;
-	cursor: pointer;
+  cursor: pointer;
 
 }
 
@@ -231,11 +233,11 @@ color: #10C7C2;
     padding: 0px;
 }
 .cmspan{
-	line-height: 14px;
+  line-height: 14px;
 font-size: 14px;
 
 color: #10C7C2;
-	cursor: pointer;
+  cursor: pointer;
 font-family: Karla;
 font-style: normal;
 font-weight: normal;
@@ -243,7 +245,7 @@ font-weight: normal;
 }
 
 #thebutton{
-	width: 231px;
+  width: 231px;
 height: 38px;
 background: #10C7C2;
 border-radius: 5px;
@@ -256,12 +258,12 @@ font-size: 16px;
 display: block;
 }
 #thebutton:hover{
-	background: #0FB5B1;
-	transition: 0.3s;
+  background: #0FB5B1;
+  transition: 0.3s;
 }
 
 #savefornever{
-	font-family: Karla;
+  font-family: Karla;
 font-style: normal;
 font-weight: normal;
 line-height: 18px;
@@ -271,20 +273,44 @@ color: #999999;
 }
 
 #card2{
-	display: none;
+  display: none;
 }
 
 .badge.badge-secondary{
-	line-height: 18px;
+  line-height: 18px;
 font-size: 14px;
 text-align: center;
 color: #999999;
 background: #fff;
-border: 1px solid #999999;
+border: 1px solid #333 !important;
 box-sizing: border-box;
 border-radius: 3px;
 font-style: normal;
 font-weight: normal;
     margin-bottom: 5px;
+    display: block;
+        min-width: 310px;
+    line-height: 29px;
+    text-align: left;
 
+}
+
+.story{
+font-style: normal;
+font-weight: normal;
+line-height: 24px;
+font-size: 14px;
+
+color: #333333;
+
+}
+
+.yAxis{
+  font-size: 10px !important;
+color: #333333;
+
+}
+
+#sortable{
+      padding: 0px !important;
 }
