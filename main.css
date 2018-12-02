@@ -6,10 +6,69 @@ body {
   text-align: center;
 }
 
+.domain path{
+	stroke: #fff;
+}
+.tick line{
+	stroke: none;
+}
 .line {
   fill: none;
-  stroke: steelblue;
+  stroke: #0FB5B1;
   stroke-width: 2px;
+}
+.line2 {
+  fill: none;
+  stroke: #FFCF56;
+  stroke-width: 2px;
+}
+
+.grid line {
+  stroke: lightgrey;
+  stroke-opacity: 0.7;
+  shape-rendering: crispEdges;
+  stroke-dasharray: 5;
+}
+
+.grid path {
+  stroke-width: 0;
+}
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+.focus circle {
+  fill: #0FB5B1;
+  stroke: rgba(15, 181, 177, 0.5);
+  stroke-width: 5px;
+}
+  
+
+.focus2 circle {
+  fill: #FFCF56;
+  stroke: rgba(255, 207, 86, 0.5);
+  stroke-width: 5px;
+}
+  
+.hover-line2 {
+  stroke: lightgrey;
+  stroke-width: 2px;
+  stroke-dasharray: 3,3;
+}
+
+
+.xAxis text{
+	display: none;
+}
+
+.xAxis path{
+  stroke: lightgrey;
+}
+
+.yAxis path{
+  stroke: lightgrey;
 }
 
 .filter{
@@ -20,6 +79,21 @@ body {
  	position: fixed;
  	left: 35px;
 
+}
+.pic{
+	height: 400px;
+	background-color: white;
+ 	box-shadow: 0 5px 15px 0 rgba(233,233,233,.8);
+ 	margin-right: :10px;
+ 	left: 10px;
+ 	
+}
+.graph{
+	height: 400px;
+	background-color: white;
+ 	box-shadow: 0 5px 15px 0 rgba(233,233,233,.8);
+ 	margin-left:10px;
+ 	right: -10px;
 }
 
 .cost{
