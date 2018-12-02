@@ -443,4 +443,67 @@ text-transform: uppercase;
 
     #radio1{
       display: none;
+<<<<<<< HEAD
     }
+
+    .bg-light {
+    z-index: 999999;
+    height: 50px;
+    background: #ffcf56 !important;
+    position: fixed;
+    width: 100%;
+    box-shadow: none !important;
+    margin-top: -81px;
+}
+
+.navbar-nav {
+
+    margin-left: 700px;
+}
+
+i.fa.fa-user {
+    border-radius: 50%;
+    border: 2px solid #535447;
+    width: 25px;
+    height: 25px;
+    padding-top: 5px;
+    padding-left: 5px;
+        color: #535447;
+
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-family: Karla;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 18px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #535447;
+        margin-right: 43px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #535447;
+        border-bottom: 2px solid;
+
+}
+
+a.navbar-brand {
+    font-family: Karla;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 24px;
+    font-size: 16px;
+    color: #535447;
+}
+
+.btn {
+    font-size: 14px;
+  }
+  .dropdown-item{
+    font-size: 14px !important;
+}
+=======
+    }
+>>>>>>> d1f9a4c2224cee0c2de09c0e8f31d48a75974530
