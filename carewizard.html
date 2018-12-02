@@ -187,20 +187,71 @@
 </div>
   </div>
         </div>
-
-        <div class="cost col-9">
+        <!----------------------------------------- costs ------------------------------------->
+        <div  id="card">
+         <div class="cost col-9">
+        <div class="front">
           <h1>Cost</h1>
           <h2>The costs you should expect to incur in the future, based on data provided by caregivers and health insurance companies.</h2>
           <div class="row">
             <div class="pic col-4">
               <span class="story">This is the cheapest care choice available. It’s going to cost you approximately <strong>$19,560</strong>/year. The majority of the cost come from <strong>living expenses</strong>. 
-</span>
+            </span>
               <img class="storyimg" src="img/happycost.png"/>
             </div>
             <div class="graph col-7" id="costGraph"></div>
               <button id="costbtn" class="deets" type="button">Find out how it's Calculated</button>
           </div>
         </div>
+      </div>
+         
+         <div class="cost col-9" style="position: absolute;">
+          <div class="back">
+            <h1>Cost Details</h1>
+            <div class="graph col-2" id="costBackGraph" style="float: left; margin-right: 40px; height: 200px"></div>
+            <div clsss="col-5" >
+                <table class="table" style="width: 550px;">
+                  <tr>
+                    <th></th>
+                    <th>OPTION 1</th>
+                    <th>OPTION 2</th>
+                    <th>National Average<br>cost</th>
+                    <th>Insurance<br>covered</th>
+                  </tr>
+                  <tr>
+                    <td>Medical Expenses</td>
+                    <td>$1360</td>
+                     <td>$1800</td>
+                     <td>$1560</td>
+                     <td>80%</td>
+                  </tr>
+                  <tr>
+                    <td>Living Expenses</td>
+                    <td>$14600</td>
+                    <td>$16000</td>
+                    <td>$15800</td>
+                    <td>0%</td>
+                    </tr>
+                  <tr>
+                    <td>Doctor Expenses</td>
+                    <td>$3600</td>
+                    <td>$4688</td>
+                    <td>$3800</td>
+                    <td>20%</td>
+                  </tr>
+                </table>
+            </div>
+            <div clsss="col-2" style="float: left; width: 40%; margin-top: 30px;">
+              <h2>Why are costs broken down this way?<h2>
+              <p>Medical Expenses are high at first because of diagnosis and finding right meds then get lower in middle stage then get higher in later stage as the person’s health becomes really poor. </p>
+            </div>
+            <button id="costbtn2" class="deets" type="button">back</button>
+          </div> 
+        </div> 
+      </div>   
+      
+
+      <!----------------------------------------- stress ------------------------------------->
         <div class="stress col-9">
           <h1>Stress</h1>
           <div class="row">
@@ -208,6 +259,8 @@
             <div class="graph col-7" id="stressGraph"></div>
           </div>
         </div>
+
+      <!----------------------------------------- reflection ------------------------------------->
         <div class="reflection col-9">
           <h1>Reflection</h1>
           <div class="row">
@@ -215,7 +268,7 @@
             <div class="graph col-7" id="reflectionGraph"></div>
           </div>
         </div>
-
+      
    
 
     </main><!-- /.container -->
@@ -227,11 +280,15 @@
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+
 
 
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="lineChart.js"></script>
     <script src="radarChart.js"></script>
+    <script src="stackedBar.js"></script>
     <script src="triangleChart.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -239,6 +296,17 @@
 
     <script type="text/javascript">
 
+      $("#card").flip({
+          trigger: 'manual'
+        });
+
+      $("#costbtn").click(function(){
+        $("#card").flip(true);
+      });
+
+      $("#costbtn2").click(function(){
+        $("#card").flip(false);
+      });
 
       
       $( "#mycm" ).click(function() {

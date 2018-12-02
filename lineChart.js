@@ -115,7 +115,7 @@ d3.csv("data/costs.csv", function(error, data) {
       .attr("class", "text-tl")
       .attr("y", height + 25)
       .attr("x", 0)
-      .text("Early Stage")
+      .text("EarlyStage")
 
   lineSvg.append("text")
       .attr("class", "text-tl")
@@ -126,7 +126,7 @@ d3.csv("data/costs.csv", function(error, data) {
   lineSvg.append("text")
       .attr("class", "text-tl")
       .attr("y", height + 25)
-      .attr("x", 360)
+      .attr("x", 320)
       .text("Late Stage")
 
   var focus2 = lineSvg.append("g")
