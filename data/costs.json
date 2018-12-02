@@ -1,0 +1,52 @@
+[
+  {
+    "date": 1,
+    "ChoiceOne": 19560,
+    "ChoiceTwo": 22488
+  },
+  {
+    "date": 2,
+    "ChoiceOne": 18760,
+    "ChoiceTwo": 23056
+  },
+  {
+    "date": 3,
+    "ChoiceOne": 16890,
+    "ChoiceTwo": 23850
+  },
+  {
+    "date": 4,
+    "ChoiceOne": 15240,
+    "ChoiceTwo": 24024
+  },
+  {
+    "date": 5,
+    "ChoiceOne": 15100,
+    "ChoiceTwo": 22000
+  },
+  {
+    "date": 6,
+    "ChoiceOne": 14560,
+    "ChoiceTwo": 17670
+  },
+  {
+    "date": 7,
+    "ChoiceOne": 15000,
+    "ChoiceTwo": 16450
+  },
+  {
+    "date": 8,
+    "ChoiceOne": 15480,
+    "ChoiceTwo": 15480
+  },
+  {
+    "date": 9,
+    "ChoiceOne": 15690,
+    "ChoiceTwo": 15690
+  },
+  {
+    "date": 10,
+    "ChoiceOne": 16000,
+    "ChoiceTwo": 16000
+  }
+]
