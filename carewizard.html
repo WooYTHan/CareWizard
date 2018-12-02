@@ -223,8 +223,6 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 
-    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
-    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
 
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="lineChart.js"></script>
@@ -235,8 +233,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/js/bootstrap-select.min.js"></script>
 
     <script type="text/javascript">
+
+
       
       $( "#mycm" ).click(function() {
+      d3.selectAll('.line2').style("display", "block");
+      d3.selectAll('.option2').style("display", "block");
+      d3.selectAll('.radar-chart-serie1').style("display", "block");
+      d3.selectAll('.option2').style("display", "block");
+      d3.selectAll('.ref-timeline').attr("y", height - 55);
+      d3.selectAll('.path2').style("display", "block");
+
       $( "#card2" ).show();
       $( "#card1" ).show();
       $( "#radio1" ).show();

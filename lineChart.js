@@ -60,30 +60,33 @@ d3.csv("data/costs.csv", function(error, data) {
       )
 
   base.append("circle")
+  .attr("class", "option2")
       .attr("r", 5.5)
       .attr("cy", 50)
       .attr("cx", 100)
-      .attr("fill", "#FFCF56");
+      .attr("fill", "#0FB5B1");
 
   base.append("text")
-      .text("Option 1")
-      .attr("r", 5.5)
+      .text("OPTION1")
+      .attr("class", "diagram-text option2")
       .attr("y", 55)
       .attr("x", 110)
-      .attr("fill", "#FFCF56");
+      .attr("fill", "#999999");
 
   base.append("text")
-      .text("Option 2")
+      .text("OPTION2")
+      .attr("class", "diagram-text option2")
       .attr("r", 5.5)
       .attr("y", 55)
       .attr("x", 260)
-      .attr("fill", "#0FB5B1");
+      .attr("fill", "#999999");
 
   base.append("circle")
+  .attr("class", "option2")
       .attr("r", 5.5)
       .attr("cy", 50)
       .attr("cx", 250)
-      .attr("fill", "#0FB5B1");
+      .attr("fill", "#FFCF56");
 
 
   // Add the valueline path.
@@ -109,16 +112,19 @@ d3.csv("data/costs.csv", function(error, data) {
       .call(d3.axisLeft(y).ticks(6).tickSizeOuter(0));
 
   lineSvg.append("text")
+      .attr("class", "text-tl")
       .attr("y", height + 25)
       .attr("x", 0)
       .text("Early Stage")
 
   lineSvg.append("text")
+      .attr("class", "text-tl")
       .attr("y", height + 25)
       .attr("x", 170)
       .text("Middle Stage")
 
   lineSvg.append("text")
+      .attr("class", "text-tl")
       .attr("y", height + 25)
       .attr("x", 360)
       .text("Late Stage")
@@ -128,34 +134,28 @@ d3.csv("data/costs.csv", function(error, data) {
         .style("display", "none");
 
     focus2.append("line")
-        .attr("class", "x-hover-line2 hover-line2")
+        .attr("class", "x-hover-line2 hover-line2 option2")
         .attr("y1", 0)
         .attr("y2", height);
 
-    focus2.append("line")
-        .attr("class", "y-hover-line2 hover-line2")
-        .attr("x1", width)
-        .attr("x2", width);
 
     focus2.append("circle")
+        .attr("class", "option2")
         .attr("r", 5.5);
 
     focus2.append("text")
+        .attr("class", "option2")
         .attr("x", 15)
         .attr("dy", ".31em");
 
   var focus = lineSvg.append("g")
         .attr("class", "focus")
         .style("display", "none");
+
      focus.append("line")
         .attr("class", "x-hover-line hover-line")
         .attr("y1", 0)
         .attr("y2", height);
-
-    focus.append("line")
-        .attr("class", "y-hover-line hover-line")
-        .attr("x1", width)
-        .attr("x2", width);
 
     focus.append("circle")
         .attr("r", 5.5);
@@ -166,13 +166,15 @@ d3.csv("data/costs.csv", function(error, data) {
 
 
     lineSvg.append("rect")
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
         .attr("class", "overlay")
         .attr("width", width)
         .attr("height", height)
         .on("mouseover", function() { focus.style("display", null); focus2.style("display", null);})
         .on("mouseout", function() { focus.style("display", "none"); focus2.style("display", "none"); })
         .on("mousemove", mousemove);
+
+    d3.selectAll('.line2').style("display", "none");
+    d3.selectAll('.option2').style("display", "none");
 
     function mousemove() {
       var x0 = x.invert(d3.mouse(this)[0]),
@@ -195,11 +197,10 @@ d3.csv("data/costs.csv", function(error, data) {
         .attr("x", "20")
         .style("fill", "#FFCF56");
 
-      focus.select(".x-hover-line").attr("y2", height - y(d.value1));
-      focus.select(".y-hover-line").attr("x2", width + width);
+      focus2.select(".x-hover-line2").attr("y2", height - y(d.value2));
+      
 
-      focus2.select(".x-hover-line").attr("y2", height - y(d.value2));
-      focus2.select(".y-hover-line").attr("x2", width + width);
+  
     }
 
 });

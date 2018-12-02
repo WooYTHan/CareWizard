@@ -12,6 +12,7 @@ body {
       width: 200px;
 }
 
+
 h1{
   font-family: Karla;
 font-style: normal;
@@ -38,16 +39,28 @@ padding-top:10px;
 
 }
 
+.diagram-text, .text-tl{
+  font-family: Karla;
+  font-size: 12px;
+  fill: #999999;
+  text-transform: uppercase;
+}
 .starter-template {
   padding: 3rem 1.5rem;
   text-align: center;
 }
 
+.toolTip{
+  position: absolute;
+}
 .domain path{
   stroke: #fff;
 }
 .tick line{
   stroke: none;
+}
+.tick text{
+  fill: #999999;
 }
 .line {
   fill: none;
