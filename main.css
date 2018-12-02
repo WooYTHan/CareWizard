@@ -1,6 +1,7 @@
 body {
   padding-top: 5rem;
   font-family: 'Karla', sans-serif;
+
 }
 
 .container {
@@ -108,7 +109,7 @@ padding-top:10px;
 }
 
 .filter{
-  height: 500px;
+  height: 700px;
   background-color: white;
 box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);  float: left;
   position: fixed;
@@ -197,6 +198,8 @@ display: block;
 .dropdown.bootstrap-select {
     padding-bottom: 10px;
     display: block;
+    font-size: 14px;
+
 }
 .dropdown-item.active, .dropdown-item:active {
     color: #fff;
@@ -241,6 +244,7 @@ color: #10C7C2;
 font-family: Karla;
 font-style: normal;
 font-weight: normal;
+  margin-left: 53px;
 
 }
 
@@ -256,6 +260,9 @@ font-weight: bold;
 line-height: 24px;
 font-size: 16px;
 display: block;
+  margin-left: 43px;
+  margin-top:13px;
+
 }
 #thebutton:hover{
   background: #0FB5B1;
@@ -270,6 +277,9 @@ line-height: 18px;
 font-size: 14px;
 text-decoration-line: underline;
 color: #999999;
+     margin-left: 115px;
+    margin-top: 14px;
+    display: block;
 }
 
 #card2{
@@ -280,7 +290,7 @@ color: #999999;
   line-height: 18px;
 font-size: 14px;
 text-align: center;
-color: #999999;
+color: #212534;
 background: #fff;
 border: 1px solid #333 !important;
 box-sizing: border-box;
@@ -288,11 +298,14 @@ border-radius: 3px;
 font-style: normal;
 font-weight: normal;
     margin-bottom: 5px;
-    display: block;
-        min-width: 310px;
-    line-height: 29px;
+    display: inline-block;
+    line-height: 20px;
     text-align: left;
       cursor: move;
+      font-family: Karla;
+font-style: normal;
+font-weight: normal;
+font-size: 10px;
 
 
 }
@@ -307,10 +320,38 @@ color: #333333;
 
 }
 
-.yAxis{
-  font-size: 10px !important;
-color: #333333;
+text {
+font-family: Karla;
+font-style: normal;
+font-weight: bold;
+line-height: 18px;
+font-size: 10px;
+text-transform: uppercase;
+color: #999999 !important;
+}
 
+
+.yAxis{
+font-family: Karla;
+font-style: normal;
+font-weight: bold;
+line-height: 18px;
+font-size: 10px;
+text-transform: uppercase;
+
+color: #999999;
+
+}
+
+.xAxis {
+    font-family: Karla;
+font-style: normal;
+font-weight: bold;
+line-height: 18px;
+font-size: 10px;
+text-transform: uppercase;
+
+color: #999999;
 }
 
 #sortable{
@@ -320,3 +361,69 @@ color: #333333;
 .card-body{
   padding-top: 0px !important;
 }
+
+.deets{
+height: 38px;
+background: #fff;
+border-radius: 5px;
+color: #10C7C2;
+border: 2px solid #10C7C2 !important;
+cursor: pointer;
+font-weight: bold;
+font-size: 16px;
+display: block;
+  margin-left: 43px;
+  margin-top:13px;
+  line-height: 15px;
+font-size: 12px;
+text-align: center;
+text-transform: uppercase;
+    position: absolute;
+    left: 31%;
+    top: 85%;
+}
+
+.deets:hover{
+  background: #10C7C2;
+  color: #fff;
+  transition: 0.5s;
+
+}
+
+    input[type='radio']:after {
+    width: 17px;
+    height: 17px;
+    border-radius: 17px;
+    top: -1px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid #eee;
+    }
+
+    input[type='radio']:checked:after {
+    width: 17px;
+    height: 17px;
+    border-radius: 17px;
+    top: -1px;
+    left: -1px;
+    position: relative;
+    background-color: #10C7C2;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid #eee;
+    }
+
+
+    #cardone{
+          background: none !important;
+    border: 0px #fff !important;
+    padding: 0px;
+    border-left: 3px solid #10C7C2 !important;
+    margin-left: -18px;
+    padding-left:18px;
+    }

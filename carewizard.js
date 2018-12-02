@@ -66,14 +66,14 @@ d3.csv("data/costs.csv", function(error, data) {
       .attr("fill", "#FFCF56");
 
   base.append("text")
-      .text("option1")
+      .text("Option 1")
       .attr("r", 5.5)
       .attr("y", 55)
       .attr("x", 110)
       .attr("fill", "#FFCF56");
 
   base.append("text")
-      .text("option2")
+      .text("Option 2")
       .attr("r", 5.5)
       .attr("y", 55)
       .attr("x", 260)
@@ -111,17 +111,17 @@ d3.csv("data/costs.csv", function(error, data) {
   svg.append("text")
       .attr("y", height + 20)
       .attr("x", 0)
-      .text("early")
+      .text("Early Stage")
 
   svg.append("text")
       .attr("y", height + 20)
       .attr("x", 170)
-      .text("middle")
+      .text("Middle Stage")
 
   svg.append("text")
       .attr("y", height + 20)
       .attr("x", 360)
-      .text("late")
+      .text("Late Stage")
 
   var focus2 = svg.append("g")
         .attr("class", "focus2")

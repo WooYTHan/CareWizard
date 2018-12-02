@@ -60,11 +60,11 @@
 
 
                                 <div id="accordion">
-                        <div class="card">
+                        <div class="card" id="cardone">
                           <div class="card-header" id="headingOne">
                             <h5 class="mb-0">
-                             <span data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="option"><i class="fa fa-chevron-down" aria-hidden="true"></i>
-                      Care Option 1</span>
+                             <span data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="option" style="display: inline-block;     width: 278px;"><i class="fa fa-chevron-down" aria-hidden="true"></i>
+                      Care Option 1</span>  <input type="radio" name="one" value="one">
 
                             </h5>
 
@@ -84,7 +84,7 @@
                                   <label>Residential Care</label> <i class="fa fa-question-circle" aria-hidden="true"></i>
 
                                   <select class="selectpicker">
-                                    <option value="volvo">Indeopendent Housing</option>
+                                    <option value="volvo">Independent Housing</option>
                                     <option value="saab">Assisted Living</option>
                                     <option value="mercedes">Nursing Home</option>
                                     <option value="audi">Unsure</option>
@@ -104,7 +104,7 @@
 
                                      <ul id="sortable">
   <li class="badge badge-secondary"></span><span class="num">1.</span>Having my loved one near me</li>
-      <li class="badge badge-secondary"></span><span class="num">2.</span>Spending enough time with my own family</li>
+      <li class="badge badge-secondary"></span><span class="num">2.</span>Spending time with my family</li>
   <li class="badge badge-secondary"></span ><span class="num">3.</span>Saving on costs</li>
   <li class="badge badge-secondary"></span><span class="num">4.</span>Focusing on work</li>
   <li class="badge badge-secondary"><span class="num">5.</span>Having enough personal time</li>
@@ -116,8 +116,8 @@
                         <div id="card2" class="card">
                           <div class="card-header" id="headingOne">
                             <h5 class="mb-0">
-                             <span data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne" class="option"><i class="fa fa-chevron-down" aria-hidden="true"></i>
-                      Care Option 2</span>
+                             <span data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne" class="option" style="display: inline-block;     width: 282px;"><i class="fa fa-chevron-down" aria-hidden="true"></i>
+                      Care Option 2</span> <input type="radio" name="two" value="two">
 
                             </h5>
 
@@ -137,7 +137,7 @@
                                   <label>Residential Care</label> <i class="fa fa-question-circle" aria-hidden="true"></i>
 
                                   <select class="selectpicker">
-                                    <option value="volvo">Indeopendent Housing</option>
+                                    <option value="volvo">Independent Housing</option>
                                     <option value="saab">Assisted Living</option>
                                     <option value="mercedes">Nursing Home</option>
                                     <option value="audi">Unsure</option>
@@ -157,7 +157,7 @@
 
                                      <ul id="sortable">
   <li class="badge badge-secondary"></span><span class="num">1.</span>Having my loved one near me</li>
-      <li class="badge badge-secondary"></span><span class="num">2.</span>Spending enough time with my own family</li>
+      <li class="badge badge-secondary"></span><span class="num">2.</span>Spending time with my family</li>
   <li class="badge badge-secondary"></span ><span class="num">3.</span>Saving on costs</li>
   <li class="badge badge-secondary"></span><span class="num">4.</span>Focusing on work</li>
   <li class="badge badge-secondary"><span class="num">5.</span>Having enough personal time</li>
@@ -192,6 +192,7 @@
               <img class="storyimg" src="img/happycost.png"/>
             </div>
             <div class="graph col-7" id="costGraph"></div>
+              <button id="costbtn" class="deets" type="button">Find out how it's Calculated</button>
           </div>
         </div>
         <div class="stress col-9">
@@ -236,6 +237,8 @@
       
       $( "#mycm" ).click(function() {
       $( "#card2" ).show();
+      $( "#card1" ).show();
+
     });
 
 
@@ -244,11 +247,19 @@
     $( "#sortable" ).disableSelection();
   } );
 
-  $('.num').each(function(i, obj) {
-    var i = 1;
+
+$("#sortable").mouseup(function() {
+    $('.num').each(function(i, obj) {
     console.log(i);
-    i++;
+      $(this).replaceWith(i+1+". ");
+      console.log("a7a");
   });
+});
+
+
+
+
+
 
 
 
