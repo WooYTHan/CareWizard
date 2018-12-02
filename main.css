@@ -1,0 +1,49 @@
+body {
+  padding-top: 5rem;
+}
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 2px;
+}
+
+.filter{
+	height: 600px;
+ 	background-color: white;
+ 	box-shadow: 0 5px 15px 0 rgba(233,233,233,.8);
+ 	float: left;
+ 	position: fixed;
+ 	left: 35px;
+
+}
+
+.cost{
+ 	height: 500px;
+ 	background-color: white;
+ 	box-shadow: 0 5px 15px 0 rgba(233,233,233,.8);
+ 	margin-bottom: 30px;
+ 	float: right;
+ 	right: -25px;
+
+}
+.stress{
+	height: 500px;
+	background-color: white;
+	box-shadow: 0 5px 15px 0 rgba(233,233,233,.8);
+	margin-bottom: 30px;
+	float: right;
+	right: -25px;
+}
+.reflection{
+	height: 500px;
+	background-color: white;
+	box-shadow: 0 5px 15px 0 rgba(233,233,233,.8);
+	margin-bottom: 30px;
+	float: right;
+	right: -25px;
+}
