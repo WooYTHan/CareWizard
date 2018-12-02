@@ -1,0 +1,16 @@
+[
+    [
+      {"area": "Financial ", "value": 2},
+      {"area": "Work", "value": 4},
+      {"area": "Family ", "value": 4},
+      {"area": "Social Life", "value": 5},
+      {"area": "Personal Time", "value": 5}
+  	],
+  	[
+      {"area": "Financial ", "value": 5},
+      {"area": "Work", "value": 3},
+      {"area": "Family ", "value": 3},
+      {"area": "Social Life", "value": 2},
+      {"area": "Personal Time", "value": 4}
+  	]
+  ]
