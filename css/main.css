@@ -28,13 +28,13 @@ padding-top:26px;
 
 
 h2{
-font-family: Karla;
+font-family: Karla
 font-style: normal;
 font-weight: normal;
 line-height: 18px;
-font-size: 12px !important;
+font-size: 14px !important;
 
-color: #999999;
+color: #333333;
 padding-top:10px;
 
 
@@ -359,8 +359,8 @@ font-weight: normal;
 .story{
     font-style: normal;
     font-weight: normal;
-    line-height: 24px;
-    font-size: 12px;
+    line-height: 20px;
+    font-size: 14px;
     color: #333333;
     width: 204px;
     text-align: left;
@@ -432,7 +432,7 @@ font-size: 12px;
 text-align: center;
 text-transform: uppercase;
     position: absolute;
-    left: 28%;
+        left: 23%;
     top: 85%;
     padding-right: 30px;
     padding-left: 30px;
@@ -694,6 +694,7 @@ button.button.button--sonar.button--accept:hover {
 	border-radius: 3px;
 	    padding: 30px !important;
 	    width:260px;
+      line-height: 20px;
 
 }
 
@@ -711,17 +712,18 @@ div#reflectionGraph {
 }
 
 h3 {
-    font-size: 13pt;
-}
+    font-size: 14px;
+    color: #333 !important;
+    text-transform: uppercase;
+    font-weight: 800;
+        padding-bottom: 5px;
+
+  }
 
 tr {
     line-height: 47px;
     font-size: 12px;
         border: 1px solid #eee;
-}
-
-table{
-	    border: 1px solid #eee;
 }
 
 .why{
