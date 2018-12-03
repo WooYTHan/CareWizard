@@ -174,7 +174,7 @@ d3.csv("data/costs.csv", function(error, data) {
 
     lineSvg.append("rect")
         .attr("class", "overlay")
-        .attr("width", width)
+        .attr("width", width + 60)
         .attr("height", height)
         .on("mouseover", function() { focus.style("display", null); focus2.style("display", null);})
         .on("mouseout", function() { focus.style("display", "none"); focus2.style("display", "none"); })
