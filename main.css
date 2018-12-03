@@ -359,7 +359,6 @@ font-weight: normal;
     color: #333333;
     width: 240px;
     text-align: left;
-    padding: 13px;
 
 }
 
@@ -571,11 +570,14 @@ a.dropdown-item {
 	-webkit-flex-direction: column;
 	flex-direction: column;
 	border-radius: 3px;
-	    padding: 12px !important;
+	     padding: 30px !important;
+    width: 260px;
+        height: 300px;
+        margin-top: 10px;
 }
 
 .stack__item img {
-      width: 150px;
+        width: 110px;
     display: block;
     pointer-events: none;
     margin-left: 34px;
@@ -679,7 +681,6 @@ button.button.button--sonar.button--accept:hover {
 	border-radius: 3px;
 	    padding: 30px !important;
 	    width:260px;
-	    text-indent: -13px !important;
 
 }
 
@@ -695,3 +696,32 @@ button.button.button--sonar.button--accept:hover {
 div#reflectionGraph {
     margin-top: 41px;
 }
+
+h3 {
+    font-size: 13pt;
+}
+
+tr {
+    line-height: 47px;
+    font-size: 12px;
+        border: 1px solid #eee;
+}
+
+table{
+	    border: 1px solid #eee;
+}
+
+.why{
+    font-size: 11pt;
+            padding-bottom: 13px;
+
+}
+th,td{
+	padding-left: 24px;
+}
+.details{
+    color: #6c757d;
+
+    font-size: 12px;
+}
+

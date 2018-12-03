@@ -204,15 +204,17 @@
           <div class="row">
             <div class="pic col-4">
               <div id="costimg1" >
-                <span class="story">This is the cheapest care choice available. It’s going to cost you approximately <span class="important">$19,560</span> this year. The majority of the cost come from <span class="important">living expenses</span>. 
+                <h3>Budget Friendly</h3>
+                <span class="story">This is the <span class="important">cheapest care choice available.</span> It’s going to cost you approximately <span class="important">$20,000</span> this year. The majority of the cost comes from <span class="important">living expenses</span>.
             </span><img class="onechoice" src="img/happycost.png"/>
               </div>
 <!--Card Test -->
        <div id="cost2img" class="paper content color-8" style="display:none" >
+
         <ul id="stack_eka" class="stack stack--eka">
-          <li class="stack__item"><span id="coststory" class="story">This is the cheapest care choice available. It’s going to cost you approximately <span class="important">$19,560</span> this year. The majority of the cost come from <span class="important">living expenses</span>. 
-            </span><img id="costpicture" src="img/happycost.png" alt="Tree 1" /></li>
-            <li class="stack__item"><span id="coststory" class="story">This is the cheapest care choice available. It’s going to cost you approximately <span class="important">$19,560</span> this year. The majority of the cost come from <span class="important">living expenses</span>. 
+          <li class="stack__item"><span id="coststory" class="story"><h3>Budget Friendly</h3>This is the <span class="important">cheapest care choice available.</span> It’s going to cost you approximately <span class="important">$20,000</span> this year. The majority of the cost comes from <span class="important">living expenses</span>.
+            </span><img class="onechoice" src="img/happycost.png"/></li>
+            <li class="stack__item"><span id="coststory" class="story"><h3>Costly Choice</h3>This is the <span class="important">more expensive choice.</span> It’s going to cost you approximately <span class="important">$22,000</span> this year. The majority of the cost comes from <span class="important">living expenses and the adult day center</span>. 
             </span><img id="costpicture" src="img/happycost.png" alt="Tree 1" /></li>
         </ul>
       </div>
@@ -230,47 +232,42 @@
          
          <div class="cost col-9" style="position: absolute;">
           <div class="back">
-            <h1>How does it calculated?</h1>
+            <h1 style="padding-bottom: 27px;">How are Costs Calculated?</h1>
             <div class="graph col-2" id="costBackGraph" style="float: left; margin-right: 50px; height: 200px"></div>
             <div clsss="col-5" >
-                <table class="table" style="width: 550px; float: right;">
+                <table class="able table-striped" style="width: 550px; float: right;">
                   <tr>
                     <th></th>
-                    <th>OPTION 1</th>
-                    <th>OPTION 2</th>
-                    <th>National Average<br>cost</th>
-                    <th>Insurance<br>covered</th>
+                    <th>Option 1</th>
+                    <th>Option 2</th>
+                    <th>Covered by Insurance</th>
                   </tr>
-                  <tr>
-                    <td>Medical Expenses</td>
-                    <td>$1360</td>
-                     <td>$1800</td>
-                     <td>$1560</td>
-                     <td>80%</td>
-                  </tr>
-                  <tr>
+                                    <tr>
                     <td>Living Expenses</td>
-                    <td>$14600</td>
-                    <td>$16000</td>
-                    <td>$15800</td>
-                    <td>0%</td>
+                    <td>$14,600</td>
+                    <td>$16,000</td>
+                    <td>$0</td>
                     </tr>
                   <tr>
-                    <td>Doctor Expenses</td>
-                    <td>$3600</td>
-                    <td>$4688</td>
-                    <td>$3800</td>
-                    <td>20%</td>
+                    <td>Medical Expenses</td>
+                    <td>$1,360</td>
+                     <td>$1,800</td>
+                     <td>$1,600</td>
+                  </tr>
+                  <tr>
+                    <td>Adult Day Center</td>
+                    <td>$0</td>
+                    <td>$4,688</td>
+                    <td>$800</td>
                   </tr>
                 </table>
             </div>
-            <div clsss="col-2" style="float: left; width: 40%; margin-top: 30px;">
-              <h2>Why are costs broken down this way?<h2>
-              <p>Medical Expenses are high at first because of diagnosis and finding right meds then get lower in middle stage then get higher in later stage as the person’s health becomes really poor. </p>
+            <div clsss="col-1" style="float: left; width: 40%; margin-top: 30px; padding-right:25px;">
+              <div class="why">Why are costs broken down this way?</div>
+              <span class="details">The majority of your costs now will be related to living expenses, this includes making your home safe for your loved one and all of their day-to-day living expenses. </span>
             </div>
             <div clsss="col-2 cost" style="float: left; width: 60%; margin-top: 30px;">
-                <h2>Recommended Actions<h2>
-                <p style="font-size:  12px; color: #10C7C2; margin: 0px;">Want more deatils? Make your choice and click ‘see my plan’ </p>
+                <div class="why">Recommended Actions</div>
                 <div  class="subDiv" style="float: left">
                   <div style="margin: 10px;">
                   <p class="title">Find your financial documents</p>
@@ -285,8 +282,10 @@
                    </p>
                   </div>
                 </div>
+                                <p style="font-size:  12px; color: #10C7C2; margin: 0px;">Want more deatils? Make your choice and click ‘see my plan’ </p>
+
             </div>
-            <button id="costbtn2" class="deets" type="button">back</button>
+            <button id="costbtn22" class="deets" type="button">back</button>
           </div> 
         </div> 
       </div>   
@@ -295,13 +294,14 @@
       <!----------------------------------------- stress ------------------------------------->
         <div class="stress col-9">
           <h1>Stress</h1>
-                    <h2>The costs you should expect to incur in the future, based on data provided by caregivers and health insurance companies.</h2>
+                    <h2>The impact this decision may have on different aspects of your life, based on data provided by caregivers.</h2>
 
           <div class="row">
             <div class="pic col-4">
                
                <div id="stressimg1" >
-                <span class="story">This is the cheapest care choice available. It’s going to cost you approximately <span class="important">$19,560</span> this year. The majority of the cost come from <span class="important">living expenses</span>. 
+                <h3>High Stress</h3>
+                <span class="story">This deicion is going to have a high impact on your<span class="important"></span> person life and will likely cause<span class="important"> a lot of stress.</span> 
             </span><img class="onechoice" src="img/far.png"/>
               </div>
        <div id="stress2img" class="paper content color-8" style="display:none" >
@@ -326,12 +326,13 @@
       <!----------------------------------------- reflection ------------------------------------->
         <div class="reflection col-9">
           <h1>Reflection</h1>
-                    <h2>The costs you should expect to incur in the future, based on data provided by caregivers and health insurance companies.</h2>
+                    <h2>How other caregivers felt over time about making this decision, based on data provided by caregivers.</h2>
 
           <div class="row">
             <div class="pic col-4">
               <div id="refimg1" >
-                <span class="story">This is the cheapest care choice available. It’s going to cost you approximately <span class="important">$19,560</span> this year. The majority of the cost come from <span class="important">living expenses</span>. 
+                <h3>Worse with Time</h3>
+                <span class="story">Caregivers have reported feeling<span class="important"> sad</span> about this choice over time due to its impact on their <span class="important">personal lives</span>. 
             </span><img class="onechoice" src="img/family.png"/>
               </div>
        <div id="ref2img" class="paper content color-8" style="display:none" >
@@ -385,7 +386,7 @@
         $("#card").flip(true);
       });
 
-      $("#costbtn2").click(function(){
+      $("#costbtn22").click(function(){
         $("#card").flip(false);
       });
 
