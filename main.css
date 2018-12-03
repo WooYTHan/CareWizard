@@ -194,9 +194,7 @@ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);  margin-bottom: 30px;
   padding-left:33px;  
 padding-right:33px; 
 }
-.col-4 {
-    max-width: 100%;
-}
+
 #fakeheader{
     z-index: 0;
     margin-top: -122px;

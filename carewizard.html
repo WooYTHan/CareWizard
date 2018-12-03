@@ -250,9 +250,9 @@
                   </tr>
                   <tr>
                     <td>Living Expenses</td>
-                    <td>$14,600</td>
-                    <td>$16,000</td>
-                    <td>$15,800</td>
+                    <td>$14600</td>
+                    <td>$16000</td>
+                    <td>$15800</td>
                     <td>0%</td>
                     </tr>
                   <tr>
@@ -266,7 +266,7 @@
             </div>
             <div clsss="col-2" style="float: left; width: 40%; margin-top: 30px;">
               <h2>Why are costs broken down this way?<h2>
-              <p style="width: 95%">Medical Expenses are high at first because of diagnosis and finding right meds then get lower in middle stage then get higher in later stage as the person’s health becomes really poor. </p>
+              <p>Medical Expenses are high at first because of diagnosis and finding right meds then get lower in middle stage then get higher in later stage as the person’s health becomes really poor. </p>
             </div>
             <div clsss="col-2 cost" style="float: left; width: 60%; margin-top: 30px;">
                 <h2>Recommended Actions<h2>
@@ -286,7 +286,7 @@
                   </div>
                 </div>
             </div>
-            <button id="flipbtn2" class="deets" type="button" style="left: 40%">back</button>
+            <button id="costbtn2" class="deets" type="button">back</button>
           </div> 
         </div> 
       </div>   
@@ -385,7 +385,7 @@
         $("#card").flip(true);
       });
 
-      $("#flipbtn2").click(function(){
+      $("#costbtn2").click(function(){
         $("#card").flip(false);
       });
 
@@ -458,14 +458,14 @@ $(window).scroll(function (event) {
 
 
 $("#costbtn1").click(function(){
-   $( "#coststory" ).replaceWith( "This is the cheapest care choice available. It’s going to cost you approximately <span class='important'>$19,560</span> this year. The majority of the cost come from <span class='important'>living expenses</span>." );
+  $( "#coststory" ).replaceWith( "<span id='coststory' class='story'>This is the cheapest care choice available. It’s going to cost you approximately <span class='important'>$19,560</span> this year. The majority of the cost come from <span class='important'>living expenses</span>.</span>");
    $('#costpicture').attr('src', 'img/happycost.png');
    console.log("wtf");
 });
 
 
 $("#costbtn2").click(function(){
-  $( "#coststory" ).replaceWith( "This is a more costly care choice. It’s going to cost you approximately <span class='important'>$22,500</span> this year. The majority of the cost come from <span class='important'>the adult day ceter</span>." );
+  $( "#coststory" ).replaceWith( "<span id='coststory' class='story'>This is the a more expensive care choice. It’s going to cost you approximately <span class='important'>$22,560</span> this year. The majority of the cost come from <span class='important'>living expenses and the adult day center</span>.</span>");
    $('#costpicture').attr('src', 'img/sadcost.png');
     console.log("wtf2");
 });      
