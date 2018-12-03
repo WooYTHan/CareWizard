@@ -621,30 +621,25 @@ button.button.button--sonar.button--accept:hover {
     width: 300px;
     text-align: center;
     margin: 0px;
-    margin-top: 10px;
-    margin-left: -42px;
+    margin-top: 7px;
+    margin-left: -23px;
 }
 
 .paper {
   background: #fff;
   box-shadow:
-    /* The top layer shadow */
    0px 0px 20px rgba(0, 0, 0, 0.1),
-     /* The third layer */
-    0 -20px 0 -10px #eee,
-    /* The third layer shadow */
-    0 -20px 1px -9px rgba(0,0,0,0.15);
-    /* Padding for demo purposes */
+    /* The second layer */
+    0 -15px 0 -7px #fff,
+    /* The second layer shadow */
+    0 -15px 10px -6px rgba(0,0,0,0.15);
     padding: 30px;
+
+
+        /* The top layer shadow */
+
 }
 
-.cardttl{
-	    backface-visibility: hidden;
-    text-transform: uppercase;
-    font-size: 16px !important;
-    text-align: left;
-    font-weight: 700;
-}
 
 .onechoice{
 	width: 200px;
@@ -652,4 +647,28 @@ button.button.button--sonar.button--accept:hover {
 
 .important{
 	color:#0eb5b1;
+}
+
+#costimg1,#stressimg1,#refimg1{
+	box-shadow:0px 0px 20px rgba(0, 0, 0, 0.1);
+	height: 300px;
+		overflow: hidden;
+	padding: 5px;
+	position: relative;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	border-radius: 3px;
+	    padding: 12px !important;
+
+}
+
+#costimg1 img,#stressimg1 img,#refimg1 img {
+      width: 150px;
+    display: block;
+    pointer-events: none;
+    margin-left: 34px;
 }
