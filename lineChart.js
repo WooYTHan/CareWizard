@@ -186,13 +186,13 @@ d3.csv("data/costs.csv", function(error, data) {
       focus2.attr("transform", "translate(" + x(d.date) + "," + y(d.value2) + ")");
       
       focus.select("text")
-        .text(function() { return "$ " + d.value1 + " /year"; })
+        .text(function() { return "$" + d3.format(",.2r")(d.value1) + "/year"; })
         .attr("y", "30")
         .attr("x", "20")
         .style("fill", "#0FB5B1");
 
       focus2.select("text")
-        .text(function() { return "$ " + d.value2 + " /year"; })
+        .text(function() { return "$" + d3.format(",.2r")(d.value2) + "/year"; })
         .attr("y","-30")
         .attr("x", "20")
         .style("fill", "#FFCF56");

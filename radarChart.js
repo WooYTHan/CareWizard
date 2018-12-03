@@ -214,7 +214,7 @@ var tooltip = d3.select("body").append("div").attr("class", "toolTip");
       .data(y).enter()
       .append("svg:circle")
       .attr("class", "circles radar-chart-serie"+series)
-      .attr('r', 1)
+      .attr('r', 3)
       .attr("alt", function(j){return Math.max(j.value, 0)})
       .attr("cx", function(j, i){
         dataValues.push([

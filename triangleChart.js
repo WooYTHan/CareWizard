@@ -151,7 +151,7 @@ triSvg.selectAll('path').on('mouseover', function (d){
   tooltip
               .style("left", (d3.event.pageX - 10) + "px")
               .style("top", (d3.event.pageY - 50) + "px")
-              .html("<span>" + (d.size/10) + "% feel" + emotion[d.fill] + "</span>")
+              .html("<span>" + (d.size/10) + "% feel " + emotion[d.fill] + "</span>")
               .style("display", "inline").style("color", color[d.fill]);
                       
                       })
