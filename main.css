@@ -177,8 +177,8 @@ padding-right:33px;
   margin: 0px;
 }
 .stress{
-  height: 500px;
-  background-color: white;
+    height: 580px;
+      background-color: white;
 box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);  margin-bottom: 30px;
   float: right;
   right: -25px;
@@ -186,7 +186,7 @@ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);  margin-bottom: 30px;
 padding-right:33px; 
 }
 .reflection{
-  height: 500px;
+    height: 580px;
   background-color: white;
 box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);  margin-bottom: 30px;
   float: right;
@@ -401,6 +401,8 @@ color: #999999;
   padding-top: 0px !important;
 }
 
+
+
 .deets{
 height: 38px;
 background: #fff;
@@ -419,6 +421,14 @@ text-transform: uppercase;
     position: absolute;
     left: 31%;
     top: 85%;
+}
+
+#costbtn3{
+	margin-left: 88px !important;
+}
+
+#costbtn4{
+	    margin-left: 103px;
 }
 
 .deets:hover{
