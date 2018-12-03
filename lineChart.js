@@ -59,33 +59,40 @@ d3.csv("data/costs.csv", function(error, data) {
           .tickFormat("")
       )
 
+
+  base.append("text")
+      .text("Annual Costs")
+      .attr("class", "text-main-tl")
+      .attr("y", 55)
+      .attr("x", 180);
+
   base.append("circle")
   .attr("class", "option2")
       .attr("r", 5.5)
-      .attr("cy", 50)
-      .attr("cx", 100)
+      .attr("cy", 55)
+      .attr("cx", 360)
       .attr("fill", "#0FB5B1");
 
   base.append("text")
       .text("OPTION1")
       .attr("class", "diagram-text option2")
-      .attr("y", 55)
-      .attr("x", 110)
+      .attr("y", 58)
+      .attr("x", 370)
       .attr("fill", "#999999");
 
   base.append("text")
       .text("OPTION2")
       .attr("class", "diagram-text option2")
       .attr("r", 5.5)
-      .attr("y", 55)
-      .attr("x", 260)
+      .attr("y", 78)
+      .attr("x", 370)
       .attr("fill", "#999999");
 
   base.append("circle")
   .attr("class", "option2")
       .attr("r", 5.5)
-      .attr("cy", 50)
-      .attr("cx", 250)
+      .attr("cy", 75)
+      .attr("cx", 360)
       .attr("fill", "#FFCF56");
 
 

@@ -11,7 +11,7 @@ var base2 = d3.select("#reflectionGraph").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
     .attr("transform",
-          "translate(" + 60 + "," + 0 + ")");
+          "translate(" + 40 + "," + 0 + ")");
 
 var triSvg = base2.append("g")
     .attr("transform",
@@ -19,47 +19,51 @@ var triSvg = base2.append("g")
 
 
 base2.append("text")
+      .text("Reflections from Other Caregivers")
+      .attr("class", "text-main-tl")
+      .attr("y", 35)
+      .attr("x", 100);
+
+
+base2.append("text")
       .text("Happy")
       .attr("class", "diagram-text")
-      .attr("r", 5.5)
-      .attr("y", 55)
-      .attr("x", 100);
+      .attr("y", 80)
+      .attr("x", 115);
 
 
 base2.append("circle")
       .attr("r", 5.5)
-      .attr("cy", 50)
-      .attr("cx", 90)
+      .attr("cy", 75)
+      .attr("cx", 105)
       .attr("fill", "#0FB5B1");
 
 
 base2.append("text")
       .text("Naturel")
       .attr("class", "diagram-text")
-      .attr("r", 5.5)
-      .attr("y", 55)
-      .attr("x", 200);
+      .attr("y", 80)
+      .attr("x", 215);
 
 
 base2.append("circle")
       .attr("r", 5.5)
-      .attr("cy", 50)
-      .attr("cx", 190)
+      .attr("cy", 75)
+      .attr("cx", 205)
       .attr("fill", "#FFCF56");
 
 
 base2.append("text")
       .text("Sad")
       .attr("class", "diagram-text")
-      .attr("r", 5.5)
-      .attr("y", 55)
-      .attr("x", 300);
+      .attr("y", 80)
+      .attr("x", 315);
 
 
 base2.append("circle")
       .attr("r", 5.5)
-      .attr("cy", 50)
-      .attr("cx", 290)
+      .attr("cy", 75)
+      .attr("cx", 305)
       .attr("fill", "#E87461");
 
 

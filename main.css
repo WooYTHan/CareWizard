@@ -156,7 +156,7 @@ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);  margin-bottom: 30px;
   right: -25px;
   padding-left:33px;  
 padding-right:33px; 
-    overflow: hidden;
+  overflow: hidden;
 
 
 }
@@ -370,6 +370,11 @@ line-height: 18px;
 font-size: 10px;
 text-transform: uppercase;
 color: #999999 !important;
+}
+
+.text-main-tl{
+  font-size: 12px;
+  color: #333 !important;
 }
 
 

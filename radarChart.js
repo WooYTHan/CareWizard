@@ -22,8 +22,9 @@ d3.json("data.json", function(error, data) {
 var svg = d3.select('#stressGraph')
 	.selectAll('svg')
 	.append('svg')
-	.attr("width", width)
-	.attr("height", height);
+	.attr("width", 500)
+	.attr("height", 400)
+    .attr("transform", "translate(" + 0 + "," + 200 + ")");
 
 var RadarChart = {
   draw: function(id, d, options){
@@ -39,7 +40,7 @@ var RadarChart = {
      opacityArea: 0.5,
      ToRight: 5,
      TranslateX: 120,
-     TranslateY: 90,
+     TranslateY: 125,
      ExtraWidthX: 100,
      ExtraWidthY: 100,
      color: d3.scaleOrdinal().range(["#10C7C2", "#FFCF56"])
@@ -65,38 +66,45 @@ var RadarChart = {
         .append("svg")
         
     var g = base3.attr("width", cfg.w+cfg.ExtraWidthX)
-        .attr("height", cfg.h+cfg.ExtraWidthY)
+        .attr("height", cfg.h+cfg.ExtraWidthY + 100)
         .append("g")
         .attr("transform", "translate(" + cfg.TranslateX + "," + cfg.TranslateY + ")");
 
         var tooltip;
 
-    base3.append("circle")
-     .attr("class", "option2")
+  base3.append("text")
+      .text("Stress Based on Your Priorities")
+      .attr("class", "text-main-tl")
+      .attr("y", 55)
+      .attr("x", 125);
+
+  base3.append("circle")
+  .attr("class", "option2")
       .attr("r", 5.5)
-      .attr("cy", 30)
-      .attr("cx", 100)
+      .attr("cy", 55)
+      .attr("cx", 360)
       .attr("fill", "#0FB5B1");
 
   base3.append("text")
       .text("OPTION1")
       .attr("class", "diagram-text option2")
-      .attr("y", 35)
-      .attr("x", 110)
+      .attr("y", 58)
+      .attr("x", 370)
       .attr("fill", "#999999");
 
- base3.append("text")
+  base3.append("text")
       .text("OPTION2")
       .attr("class", "diagram-text option2")
-      .attr("y", 35)
-      .attr("x", 260)
+      .attr("r", 5.5)
+      .attr("y", 78)
+      .attr("x", 370)
       .attr("fill", "#999999");
 
   base3.append("circle")
   .attr("class", "option2")
       .attr("r", 5.5)
-      .attr("cy", 30)
-      .attr("cx", 250)
+      .attr("cy", 75)
+      .attr("cx", 360)
       .attr("fill", "#FFCF56");
     
     //Circular segments
