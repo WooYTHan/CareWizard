@@ -40,7 +40,7 @@ base2.append("circle")
 
 
 base2.append("text")
-      .text("Naturel")
+      .text("Neutral")
       .attr("class", "diagram-text")
       .attr("y", 80)
       .attr("x", 235);
