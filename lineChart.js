@@ -115,7 +115,7 @@ d3.csv("data/costs.csv", function(error, data) {
       .attr("class", "text-tl")
       .attr("y", height + 25)
       .attr("x", 0)
-      .text("EarlyStage")
+      .text("Early Stage")
 
   lineSvg.append("text")
       .attr("class", "text-tl")

@@ -133,17 +133,17 @@ triSvg.append("text").attr("class", "path2 diagram-text").text("OPTION 2").attr(
 triSvg.append("text").attr("class", "ref-timeline text-tl")
 .attr("y", height - 55)
 .attr("x", 60)
-.text("early")
+.text("Early Stage")
 
 triSvg.append("text").attr("class", "ref-timeline text-tl")
 .attr("y", height - 55)
 .attr("x", 150)
-.text("middle")
+.text("Middle Stage")
 
 triSvg.append("text").attr("class", "ref-timeline text-tl")
 .attr("y", height - 55)
 .attr("x", 260)
-.text("late")
+.text("Late Stage")
 
 var tooltip = d3.select("body").append("div").attr("class", "toolTip");
 
