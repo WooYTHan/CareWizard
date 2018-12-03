@@ -38,9 +38,11 @@ var svg2 = d3.select("#costBackGraph").append("svg")
 var count = 0;
 svg2.append("text").text("$19,650/year").attr("x", -15).attr("y", 300).style("fill", "#0EA395");
 svg2.append("text").text("$22,488/year").attr("x", 65).attr("y", 280).style("fill", "#E8BD4F");
-svg2.append("text").text("Medical").attr("x", 30).attr("y", 320);
-svg2.append("text").text("Living").attr("x", 32).attr("y", 380);
-svg2.append("text").text("Doctor").attr("x", 30).attr("y", 440);
+svg2.append("text").text("Medical").attr("x", 30).attr("y", 320).style("fill", "#999999");
+svg2.append("text").text("Living").attr("x", 35).attr("y", 380).style("fill", "#999999");
+svg2.append("text").text("Adult").attr("x", 35).attr("y", 430).style("fill", "#999999");
+svg2.append("text").text("Day").attr("x", 39).attr("y", 440).style("fill", "#999999");
+svg2.append("text").text("Center").attr("x", 33).attr("y", 450).style("fill", "#999999");
   
 svg2.append("g").selectAll("g")
       .data(d3.stack().keys(d3.range(n))(data))
