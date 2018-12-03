@@ -4,7 +4,7 @@ var n = 3, // number of samples
 
 var data = [[ 3600/22488, 14600/22488, 1360/22488]];
 var data2 = [[4688/22488, 16000/22488,1800/22488]];
-var margin = {top: 20, right: 30, bottom: 30, left: 40},
+var margin = {top: 20, right: 30, bottom: 30, left: 20},
     width = 200 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
@@ -27,15 +27,20 @@ var z2 = d3.scaleOrdinal()
 
 
 var svg2 = d3.select("#costBackGraph").append("svg")
-    .attr("width", 100 + margin.left + margin.right)
+    .attr("width", 200 + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom - 200)
-    .attr("transform", "translate(" + (20) + "," + 0 + ")")
+    .attr("transform", "translate(" + (-20) + "," + 0 + ")")
     .append("g")
-    .attr("transform", "translate(" + 0 + "," + (-250) + ")");
+    .attr("transform", "translate(" + 20 + "," + (-250) + ")");
 
 //console.log(data)
 
 var count = 0;
+svg2.append("text").text("$19650/year").attr("x", -15).attr("y", 300).style("fill", "#0EA395");
+svg2.append("text").text("$22488/year").attr("x", 65).attr("y", 280).style("fill", "#E8BD4F");
+svg2.append("text").text("Medical").attr("x", 30).attr("y", 320);
+svg2.append("text").text("Living").attr("x", 32).attr("y", 380);
+svg2.append("text").text("Doctor").attr("x", 30).attr("y", 440);
   
 svg2.append("g").selectAll("g")
       .data(d3.stack().keys(d3.range(n))(data))
@@ -56,7 +61,7 @@ svg2.append("g").attr("class","option").selectAll("g")
       .selectAll("rect")
       .data(function(d) { return d; })
       .enter().append("rect")
-      .attr("x", function(d, i) { return x2(i) + 50; })
+      .attr("x", function(d, i) { return x2(i) + 80; })
       .attr("y", function(d) { return y2(d[1]); })
       .attr("height", function(d) { return y2(d[0]) - y2(d[1]); })
       .attr("width", x2.bandwidth());
