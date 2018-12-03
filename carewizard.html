@@ -158,7 +158,7 @@
 
                                     <label>Additional Care</label> <i class="fa fa-question-circle" aria-hidden="true"></i>
 
-                                  <select class="selectpicker">
+                                  <select class="selectpicker" id="AddCare">
                                     <option value="volvo">In-home Care Service</option>
                                     <option value="saab">Adult Day Center</option>
                                     <option value="mercedes">Counseling</option>
@@ -269,14 +269,14 @@
                 <div  class="subDiv" style="float: left">
                   <div style="margin: 10px;">
                   <p class="title">Find your financial documents</p>
-                  <p class="content">Gather and organize financial documents in one place. Then, carefully review all documents, even if you're already familiar with them.                    
+                  <p class="cont">Gather and organize financial documents in one place. Then, carefully review all documents, even if you're already familiar with them.                    
                   </p>
                   </div>
                 </div>
                 <div class="subDiv" style="float: right">
                   <div style="margin: 10px;">
                   <p class="title">Understand your insurance coverage</p>
-                  <p class="content">No matter the age of the person with dementia, it's vital to keep any existing health care plans that meet care needs in effect.
+                  <p class="cont">No matter the age of the person with dementia, it's vital to keep any existing health care plans that meet care needs in effect.
                    </p>
                   </div>
                 </div>
@@ -343,14 +343,20 @@
         $("#card").flip(false);
       });
 
+      $('#AddCare').change(function(){
+        if($(this).val() == "saab"){
+            d3.selectAll('.line2').style("display", "block");
+            d3.selectAll('.option2').style("display", "block");
+            d3.selectAll('.radar-chart-serie1').style("display", "block");
+            d3.selectAll('.option2').style("display", "block");
+            d3.selectAll('.ref-timeline').attr("y", height - 55);
+            d3.selectAll('.path2').style("display", "block");
+        }
+               
+      });
+
       
       $( "#mycm" ).click(function() {
-      d3.selectAll('.line2').style("display", "block");
-      d3.selectAll('.option2').style("display", "block");
-      d3.selectAll('.radar-chart-serie1').style("display", "block");
-      d3.selectAll('.option2').style("display", "block");
-      d3.selectAll('.ref-timeline').attr("y", height - 55);
-      d3.selectAll('.path2').style("display", "block");
 
       $( "#card2" ).show();
       $( "#card1" ).show();
