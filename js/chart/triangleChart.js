@@ -22,20 +22,20 @@ base2.append("text")
       .text("Reflections from Other Caregivers")
       .attr("class", "text-main-tl")
       .attr("y", 35)
-      .attr("x", 100);
+      .attr("x", 120);
 
 
 base2.append("text")
       .text("Happy")
       .attr("class", "diagram-text")
       .attr("y", 80)
-      .attr("x", 115);
+      .attr("x", 135);
 
 
 base2.append("circle")
       .attr("r", 5.5)
       .attr("cy", 75)
-      .attr("cx", 105)
+      .attr("cx", 125)
       .attr("fill", "#0FB5B1");
 
 
@@ -43,13 +43,13 @@ base2.append("text")
       .text("Naturel")
       .attr("class", "diagram-text")
       .attr("y", 80)
-      .attr("x", 215);
+      .attr("x", 235);
 
 
 base2.append("circle")
       .attr("r", 5.5)
       .attr("cy", 75)
-      .attr("cx", 205)
+      .attr("cx", 225)
       .attr("fill", "#FFCF56");
 
 
@@ -57,13 +57,13 @@ base2.append("text")
       .text("Sad")
       .attr("class", "diagram-text")
       .attr("y", 80)
-      .attr("x", 315);
+      .attr("x", 335);
 
 
 base2.append("circle")
       .attr("r", 5.5)
       .attr("cy", 75)
-      .attr("cx", 305)
+      .attr("cx", 325)
       .attr("fill", "#E87461");
 
 
@@ -110,7 +110,7 @@ var line = triSvg.selectAll('.path1')
   })
   .attr('stroke', 'none')
   .attr('transform', function(d) {
-    return "translate(" + (d.x + 30) + "," + d.y + ")";
+    return "translate(" + (d.x + 50) + "," + d.y + ")";
   });
 
 triSvg.append("text").attr("class","diagram-text").text("OPTION 1").attr("x", -50);
@@ -129,24 +129,24 @@ var line2 = triSvg.selectAll('.path2')
   })
   .attr('stroke', 'none')
   .attr('transform', function(d) {
-    return "translate(" + (d.x + 30) + "," + (d.y + 100) + ")";
+    return "translate(" + (d.x + 50) + "," + (d.y + 100) + ")";
   });
 
 triSvg.append("text").attr("class", "path2 diagram-text").text("OPTION 2").attr("x", -50).attr("y", 100);
 
 triSvg.append("text").attr("class", "ref-timeline text-tl")
 .attr("y", height - 55)
-.attr("x", 35)
+.attr("x", 55)
 .text("Early Stage")
 
 triSvg.append("text").attr("class", "ref-timeline text-tl")
 .attr("y", height - 55)
-.attr("x", 145)
+.attr("x", 165)
 .text("Middle Stage")
 
 triSvg.append("text").attr("class", "ref-timeline text-tl")
 .attr("y", height - 55)
-.attr("x", 255)
+.attr("x", 275)
 .text("Late Stage")
 
 var tooltip = d3.select("body").append("div").attr("class", "toolTip");

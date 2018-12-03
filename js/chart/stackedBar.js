@@ -31,7 +31,7 @@ var svg2 = d3.select("#costBackGraph").append("svg")
     .attr("height", height + margin.top + margin.bottom - 200)
     .attr("transform", "translate(" + (-20) + "," + 0 + ")")
     .append("g")
-    .attr("transform", "translate(" + 20 + "," + (-250) + ")");
+    .attr("transform", "translate(" + 60 + "," + (-250) + ")");
 
 //console.log(data)
 

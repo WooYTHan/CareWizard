@@ -28,7 +28,7 @@
     <link rel="stylesheet" type="text/css" href="css/demo.css" />
     <link rel="stylesheet" type="text/css" href="css/component.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-        <link href="main.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
 
 
   </head>
@@ -54,7 +54,7 @@
         <a class="nav-link" href="#">Diary</a>
       </li>
 <li class="nav-item">
-        <a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true"></i>
+        <a class="nav-link" href="#"><img src="img/profile.png" style="width: 23px; height: 23px"/>
 </a>
       </li>
 
@@ -68,8 +68,8 @@
     <main role="main" class="container">
         <div class="filter col-3">
           <div class="row">
-                                <h1>Future Explorer</h1>
-                                <h2>Test different care decisions to get a glimpse of your future.</h2>
+                                <h1 style="margin-left: 10px;">Future Explorer</h1>
+                                <h2 style="margin-left: 10px;">Test different care decisions to get a glimpse of your future.</h2>
 
 
                                 <div id="accordion">
@@ -118,7 +118,7 @@
                                      <ul id="sortable">
   <li class="badge badge-secondary"></span><span class="num">1. </span>Having my loved one near me</li>
       <li class="badge badge-secondary"></span><span class="num">2. </span>Spending time with my family</li>
-  <li class="badge badge-secondary"></span ><span class="num">3. </span>Saving on costs</li>
+  <li class="badge badge-secondary"></span ><span class="num">3. </span>Saving costs</li>
   <li class="badge badge-secondary"></span><span class="num">4. </span>Focusing on work</li>
   <li class="badge badge-secondary"><span class="num">5. </span>Having enough personal time</li>
 </ul>
@@ -197,7 +197,7 @@
         </div>
         <!----------------------------------------- costs ------------------------------------->
         <div  id="card">
-         <div class="cost col-9">
+         <div class="cost col-10">
         <div class="front">
           <h1>Cost</h1>
           <h2>The costs you should expect to incur in the future, based on data provided by caregivers and health insurance companies.</h2>
@@ -230,12 +230,13 @@
         </div>
       </div>
          
-         <div class="cost col-9" style="position: absolute;">
+         <div class="cost col-10" style="position: absolute;">
           <div class="back">
-            <h1 style="padding-bottom: 27px;">How are Costs Calculated?</h1>
+            <h1 style="padding-bottom: 15px;">How are Costs Calculated?</h1>
+            <div class="why">Cost Breakdown</div>
             <div class="graph col-2" id="costBackGraph" style="float: left; margin-right: 50px; height: 200px"></div>
             <div clsss="col-5" >
-                <table class="able table-striped" style="width: 550px; float: right;">
+                <table class="able table-striped" style="width: 510px; float: right;">
                   <tr>
                     <th></th>
                     <th>Option 1</th>
@@ -262,7 +263,7 @@
                   </tr>
                 </table>
             </div>
-            <div clsss="col-1" style="float: left; width: 40%; margin-top: 30px; padding-right:25px;">
+            <div clsss="col-1" style="float: left; width: 40%; margin-top: 30px; padding-right:48px;">
               <div class="why">Why are costs broken down this way?</div>
               <span class="details">The majority of your costs now will be related to living expenses, this includes making your home safe for your loved one and all of their day-to-day living expenses. </span>
             </div>
@@ -293,7 +294,7 @@
 
       <!----------------------------------------- stress ------------------------------------->
         
-        <div class="stress col-9">
+        <div class="stress col-10">
           <h1>Stress</h1>
                     <h2>The impact this decision may have on different aspects of your life, based on data provided by caregivers.</h2>
 
@@ -328,7 +329,7 @@
         </div>
 
       <!----------------------------------------- reflection ------------------------------------->
-        <div class="reflection col-9">
+        <div class="reflection col-10">
           <h1>Reflection</h1>
                     <h2>How other caregivers felt over time about making this decision, based on data provided by caregivers.</h2>
 
@@ -372,10 +373,10 @@
 
 
     <script src="https://d3js.org/d3.v4.min.js"></script>
-    <script src="lineChart.js"></script>
-    <script src="radarChart.js"></script>
-    <script src="stackedBar.js"></script>
-    <script src="triangleChart.js"></script>
+    <script src="js/chart/lineChart.js"></script>
+    <script src="js/chart/radarChart.js"></script>
+    <script src="js/chart/stackedBar.js"></script>
+    <script src="js/chart/triangleChart.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/js/bootstrap-select.min.js"></script>

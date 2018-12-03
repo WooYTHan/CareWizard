@@ -127,7 +127,7 @@ padding-top:10px;
   background-color: white;
 box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);  float: left;
   position: fixed;
-  left: 35px;
+  left: 45px;
   padding-left:33px;  
 padding-right:33px; 
 overflow: none;
@@ -153,8 +153,8 @@ overflow: none;
   background-color: white;
 box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);  margin-bottom: 30px;
   float: right;
-  right: -25px;
-  padding-left:33px;  
+  right: -105px;
+  padding-left:43px;  
 padding-right:33px; 
   overflow: hidden;
 
@@ -162,11 +162,11 @@ padding-right:33px;
 }
 
 .subDiv{
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
-  backface-visibility: hidden;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
   width: 48%;
   font-size: 10px;
-  height:120px;
+  height: 100px;
+  margin-bottom: 5px;
 }
 .subDiv .title{
   font-size: 12px;
@@ -185,8 +185,8 @@ padding-right:33px;
   background-color: white;
 box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);  margin-bottom: 30px;
   float: right;
-  right: -25px;
-  padding-left:33px;  
+  right: -105px;
+  padding-left:43px;  
 padding-right:33px; 
 }
 .reflection{
@@ -194,8 +194,8 @@ padding-right:33px;
   background-color: white;
 box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);  margin-bottom: 30px;
   float: right;
-  right: -25px;
-  padding-left:33px;  
+  right: -105px;
+  padding-left:43px;  
 padding-right:33px; 
 }
 
@@ -429,6 +429,8 @@ text-transform: uppercase;
     position: absolute;
     left: 28%;
     top: 85%;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 #costbtn3{
@@ -490,17 +492,18 @@ text-transform: uppercase;
 
     .bg-light {
     z-index: 999999;
-    height: 50px;
-    background: #ffcf56 !important;
-    position: relative;
-    width: 100%;
-    box-shadow: none !important;
-    margin-top: -81px;
+height: 50px;
+background: rgba(255,255,255,0) !important;
+position: relative;
+width: 100%;
+box-shadow: none !important;
+margin-top: -75px;
+margin-left: 15px;
 }
 
 .navbar-nav {
 
-    margin-left: 700px;
+    margin-left: 855px;
 }
 
 i.fa.fa-user {
@@ -522,7 +525,7 @@ i.fa.fa-user {
     font-size: 12px;
     text-transform: uppercase;
     color: #535447;
-        margin-right: 43px;
+        margin-right: 18px;
 }
 
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
@@ -577,7 +580,7 @@ a.dropdown-item {
 	border-radius: 3px;
 	     padding: 30px !important;
     width: 260px;
-        height: 300px;
+        height: 334px;
         margin-top: 10px;
 }
 
@@ -673,7 +676,7 @@ button.button.button--sonar.button--accept:hover {
 
 #costimg1,#stressimg1,#refimg1{
 	box-shadow:0px 0px 20px rgba(0, 0, 0, 0.1);
-	    height: 304px;
+	    height: 334px;
 		overflow: hidden;
 	padding: 5px;
 	position: relative;

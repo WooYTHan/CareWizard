@@ -1,5 +1,5 @@
-var width1 = 200,
-    height1 = 200;
+var width1 = 250,
+    height1 = 250;
 
 // Config for the Radar chart
 var config = {
@@ -11,7 +11,7 @@ var config = {
 }
 
 //Call function to draw the Radar chart
-d3.json("data.json", function(error, data) {
+d3.json("data/data.json", function(error, data) {
     if (error) throw error;
     RadarChart.draw("#stressGraph", data, config);
     d3.selectAll('.radar-chart-serie1').style("display", "none");
@@ -39,7 +39,7 @@ var RadarChart = {
      radians: 2 * Math.PI,
      opacityArea: 0.5,
      ToRight: 5,
-     TranslateX: 120,
+     TranslateX: 140,
      TranslateY: 125,
      ExtraWidthX: 100,
      ExtraWidthY: 100,
@@ -76,35 +76,35 @@ var RadarChart = {
       .text("Stress Based on Your Priorities")
       .attr("class", "text-main-tl")
       .attr("y", 55)
-      .attr("x", 125);
+      .attr("x", 165);
 
   base3.append("circle")
   .attr("class", "option2")
       .attr("r", 5.5)
-      .attr("cy", 55)
-      .attr("cx", 360)
+      .attr("cy", 65)
+      .attr("cx", 390)
       .attr("fill", "#0FB5B1");
 
   base3.append("text")
       .text("OPTION1")
       .attr("class", "diagram-text option2")
-      .attr("y", 58)
-      .attr("x", 370)
+      .attr("y", 68)
+      .attr("x", 400)
       .attr("fill", "#999999");
 
   base3.append("text")
       .text("OPTION2")
       .attr("class", "diagram-text option2")
       .attr("r", 5.5)
-      .attr("y", 78)
-      .attr("x", 370)
+      .attr("y", 88)
+      .attr("x", 400)
       .attr("fill", "#999999");
 
   base3.append("circle")
   .attr("class", "option2")
       .attr("r", 5.5)
-      .attr("cy", 75)
-      .attr("cx", 360)
+      .attr("cy", 85)
+      .attr("cx", 390)
       .attr("fill", "#FFCF56");
     
     //Circular segments
