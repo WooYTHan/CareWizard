@@ -734,3 +734,17 @@ div#cost2img {
 	    width: 167px;
     margin-left: 15px;
 }
+
+#refimg1 .onechoice,#ref2img img{
+	    width: 127px !important;
+}
+
+#stress2img .onechoice{
+	width: 177px;
+    margin-left: 11px;
+}
+
+#stress2img .stack__item,#ref2img .stack__item {
+
+    opacity: 1;
+}
