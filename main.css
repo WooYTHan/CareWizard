@@ -523,3 +523,67 @@ button.btn.dropdown-toggle.btn-light {
 a.dropdown-item {
     font-size: 12px;
 }
+
+.content {
+	overflow: hidden;
+	padding: 5px;
+	position: relative;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	border:2px solid #eee;
+	border-radius: 5px;
+}
+
+.stack__item img {
+    width: 60%;
+    display: block;
+    pointer-events: none;
+}
+
+.stack {
+
+    height: 300px;
+}
+
+button.button.button--sonar.button--reject {
+    font-size: 12px;
+        font-family: Karla;
+    text-transform: uppercase;
+        width:100px;
+        color:#0eb5b1;
+            border: 1px solid;
+    border-radius: 2px;
+    padding: 0px !important;
+    line-height: 23px;
+    height: inherit;
+}
+
+button.button.button--sonar.button--accept {
+    font-size: 12px;
+        font-family: Karla;
+    text-transform: uppercase;
+    width:100px;
+    color:#ffcf56;
+        border: 1px solid;
+    border-radius: 2px;
+    padding: 0px !important;
+    line-height: 23px;
+    height: inherit;
+}
+
+.controls {
+    position: relative;
+    width: 300px;
+    text-align: center;
+    margin: 0px;
+    margin-top: 10px;
+    margin-left: -42px;
+}
+
+
+
+

@@ -24,11 +24,12 @@
     <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link href="main.css" rel="stylesheet">
           <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/demo.css" />
     <link rel="stylesheet" type="text/css" href="css/component.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        <link href="main.css" rel="stylesheet">
+
 
   </head>
 
@@ -204,20 +205,17 @@
             <div class="pic col-4">
 <!--Card Test -->
        <div class="content color-8">
-        <h2 class="content__title">Eka</h2>
         <ul id="stack_eka" class="stack stack--eka">
-          <li class="stack__item"><img src="img/happycost.png" alt="Tree 1" /></li>
-          <li class="stack__item"><img src="img/happycost.png" alt="Tree 2" /></li>
+          <li class="stack__item"> <span class="story">This is the cheapest care choice available. It’s going to cost you approximately <strong>$19,560</strong>/year. The majority of the cost come from <strong>living expenses</strong>. 
+            </span><img src="img/happycost.png" alt="Tree 1" /></li>
+          <li class="stack__item"> <span class="story">This is the cheapest care choice available. It’s going to cost you approximately <strong>$19,560</strong>/year. The majority of the cost come from <strong>living expenses</strong>. <img src="img/happycost.png" alt="Tree 2" /></li>
         </ul>
-        <div class="controls">`
-          <button class="button button--sonar button--reject" data-stack="stack_eka"><i class="fa fa-times"></i><span class="text-hidden">Reject</span></button>
-          <button class="button button--sonar button--accept" data-stack="stack_eka"><i class="fa fa-check"></i><span class="text-hidden">Accept</span></button>
-        </div>
       </div>
+              <div class="controls">
+          <button class="button button--sonar button--reject" data-stack="stack_eka"><span>Option 1</span></button>
+          <button class="button button--sonar button--accept" data-stack="stack_eka"><span>Option 2</span></button>
+        </div>
       <!--Card Test -->
-              <span class="story">This is the cheapest care choice available. It’s going to cost you approximately <strong>$19,560</strong>/year. The majority of the cost come from <strong>living expenses</strong>. 
-            </span>
-              <img class="storyimg" src="img/happycost.png"/>
             </div>
             <div class="graph col-7" id="costGraph"></div>
               <button id="costbtn" class="deets" type="button">Find out how it's Calculated</button>

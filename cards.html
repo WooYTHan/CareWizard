@@ -1,0 +1,347 @@
+<head>
+<style>
+@import "bourbon";
+
+/* coloring */
+$black: #000;
+$white: #F1EDDC;
+$purple: #A82743;
+$orange: #E15E32;
+
+/* animation stuff */
+$cards-transition-duration: 750ms;
+$cards-translate: 10;
+
+/* card variables */
+$cards-amount: 9; /* the amount of cards, keep this amount ODD, NOT EVEN! */
+
+$card-width: 200px; /* each card's width */
+$card-height: 2 * $card-width; /* each card's height */
+
+$firsthalf: ($cards-amount / 2) - 0.5; /* not needed to edit */
+$secondhalf: ($cards-amount / 2) + 1.5; /* not needed to edit */
+
+@import "https://fonts.googleapis.com/css?family=Varela+Round";
+
+body,
+html {
+	font-family: "Varela Round", sans-serif;
+	height: 100%;
+	overflow: hidden;
+	background-color: $purple;
+	color: $white;
+	@include background-image(radial-gradient(center, ellipse cover, lighten($purple, 15%) 0%, darken($purple, 25%) 100%));
+}
+
+a,
+a:link,
+a:active,
+a:hover,
+a:visited {
+	color: $white;
+	text-decoration: none;
+	border-bottom: 1px solid rgba($white, 0);
+	@include transition(all $cards-transition-duration);
+}
+
+a:hover {
+	border-bottom: 1px solid rgba($white, 1);
+}
+
+.fan {
+	height: $card-height;
+	text-align: center;
+	position: relative;
+	top: 50%;
+	@include transform(translateY(-50%));
+	/* cardsss */
+	li {
+		width: $card-width;
+		height: $card-height;
+		position: absolute;
+		top: 0;
+		left: calc(50% - #{$card-width / 2});
+		cursor: pointer;
+		border-radius: 8px;
+		display: block;
+		margin: 5px;
+		opacity: 0;
+		@include perspective(1800);
+		@include transition(all $cards-transition-duration);
+		@include transform-origin(50% 100%);
+		&:hover {
+			z-index: #{$cards-amount + 1};
+			@include transform(scale(1.25) rotate(3deg) rotatex(-3deg) translate(-10px, -5px)!important);
+			//@include box-shadow(0px 0px 25px rgba($black,.55)!important);
+		}
+		/* normal states */
+		@for $i from 1 through $secondhalf {
+			&:nth-child(#{$i}) {
+				@include transform(rotate(#{($i - $cards-amount + 4)*8}deg));
+				@include animation(fadeIn $cards-transition-duration ($cards-transition-duration/5)*$i ease-in-out forwards);
+				//@include box-shadow(0px 5px 5px rgba($black,.05));
+			}
+		}
+		&:nth-child(#{$secondhalf - 1}) {
+			@include transform(translate(0) rotate(0deg));
+			@include animation(fadeIn $cards-transition-duration ($cards-transition-duration/5)*$secondhalf ease-in-out forwards);
+			//@include box-shadow(0px 5px 5px rgba($black,.05));
+		}
+		@for $i from length($secondhalf) through $cards-amount {
+			&:nth-child(#{$i}) {
+				@include transform(rotate(#{($i - 5)*8}deg));
+				@include animation(fadeIn $cards-transition-duration ($cards-transition-duration/5)*$i ease-in-out forwards);
+				//@include box-shadow(0px 5px 5px rgba($black,.05));
+			}
+		}
+		/* hover states */
+		&.before {
+			@for $i from 1 through ($cards-amount - 1) {
+				&.prefix_#{$i} {
+					$zIndex: (((90 / $cards-amount) * ($i - 1))/10)+1;
+					$angle: ((25 / $cards-amount) * ($i*1.25));
+					$translate: (($i * $cards-translate) + $cards-amount);
+					@include transform(rotate(-#{$angle}deg) translate(-#{($translate*6)}px, #{($translate)}px));
+					box-shadow: -#{$i}px #{$i}px 5px rgba($black,.25);
+					z-index: #{$i};
+				}
+			}
+		}
+		&.after {
+			@for $i from 1 through ($cards-amount - 1) {
+				&.prefix_#{$i} {
+					$zIndex: (((90 / $cards-amount) * ($i - 1))/10)-1;
+					$angle: ((25 / $cards-amount) * ($i * 1.25)) ;
+					$translate: (($i * $cards-translate) + $cards-amount);
+					@include transform(rotate(#{$angle}deg) translate(#{$translate*6}px, #{($translate)}px));
+					box-shadow: -#{$i}px #{$i}px 5px rgba($black, .25);
+					z-index: #{$zIndex};
+				}
+			}
+		}
+		/* content for the "cards" */
+		.content {
+			height: $card-width * .67;
+			line-height: $card-width * .67;
+			color: $white;
+			font-size: 40px;
+		}
+		.flip {
+			width: $card-width;
+			height: $card-height;
+			position: relative;
+			@include perspective(1800);
+			.card {
+				width: $card-width;
+				height: $card-height;
+				@include transform-style(preserve-3d);
+				@include transition(all $cards-transition-duration/2);
+				&.flipped {
+					@include transform(rotateX(-190deg));
+				}
+				.face {
+					width: $card-width;
+					height: $card-height;
+					position: absolute;
+					z-index: 99;
+					text-align: center;
+					line-height: $card-height;
+					font-size: 30px;
+					text-shadow: rgba($black, .25) 0px 2px 1px;
+					border-radius: 8px;
+					box-shadow: 0px 0px 25px rgba($black,.55);
+					@include backface-visibility(hidden);
+					&.front {
+						position: absolute;
+						z-index: 1;
+						color: $white;
+						cursor: pointer;
+					}
+					&.back {
+						background: $white;
+						color: $black;
+						cursor: pointer;
+						@include transform(rotateX(-180deg));
+					}
+				}
+			}
+		}
+	}
+}
+
+footer {
+	position: fixed;
+	bottom: 10px;
+	left: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 9px;
+	color: $white;
+	opacity: 0;
+	@include animation(fadeIn $cards-transition-duration ($cards-transition-duration/5)*$cards-amount ease-in-out forwards);
+}
+
+@include keyframes(fadeIn) {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+</style>
+</head>
+<body>
+			<ul class="fan">
+			<li>
+				<div class="flip">
+					<div class="card">
+						<div class="face front" data-bgcolor="#5C323E">
+							Front
+						</div>
+						<div class="face back">
+							Back
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="flip">
+					<div class="card">
+						<div class="face front" data-bgcolor="#A82743">
+							Front
+						</div>
+						<div class="face back">
+							Back
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="flip">
+					<div class="card">
+						<div class="face front" data-bgcolor="#E15E32">
+							Front
+						</div>
+						<div class="face back">
+							Back
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="flip">
+					<div class="card">
+						<div class="face front" data-bgcolor="#C0D23E">
+							Front
+						</div>
+						<div class="face back">
+							Back
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="flip">
+					<div class="card">
+						<div class="face front" data-bgcolor="#E5F04C">
+							Front
+						</div>
+						<div class="face back">
+							Back
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="flip">
+					<div class="card">
+						<div class="face front" data-bgcolor="#C0D23E">
+							Front
+						</div>
+						<div class="face back">
+							Back
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="flip">
+					<div class="card">
+						<div class="face front" data-bgcolor="#E15E32">
+							Front
+						</div>
+						<div class="face back">
+							Back
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="flip">
+					<div class="card">
+						<div class="face front" data-bgcolor="#A82743">
+							Front
+						</div>
+						<div class="face back">
+							Back
+						</div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="flip">
+					<div class="card">
+						<div class="face front" data-bgcolor="#5C323E">
+							Front
+						</div>
+						<div class="face back">
+							Back
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<footer>
+			An experiment by <a href="http://www.dviate.com/" rel="external">Dviate</a> &mdash; Color inspiration via <a href="http://www.colourlovers.com/palette/1015109/All_Eyes_On_You" rel="external">Colourlovers</a>
+		</footer>
+</body>
+
+
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script>
+
+				$(document).ready(function () {
+				$("body").bind("touchstart", function() { /* nothing needed here, see http://stackoverflow.com/a/23012580 */ });
+				$(".fan li").hover(function() {
+					$(this).nextAll().each(function(i) {
+						$(this).addClass("after prefix_" + (i+1));
+					});
+					$(this).prevAll().each(function(i) {
+						$(this).addClass("before prefix_" + (i+1));
+					});
+				}, function() {
+					$(this).nextAll().each(function(i) {
+						$(this).removeClass("after prefix_" + (i+1));
+					});
+					$(this).prevAll().each(function(i) {
+						$(this).removeClass("before prefix_" + (i+1));
+					});
+				});
+				/* add the "flip" function */
+				$(".fan li").click(function(){
+					$(this).find(".card").addClass("flipped").mouseleave(function(){
+						$(this).removeClass("flipped");
+					});
+					return false;
+				});
+				/* set the card's data + bgcolor */
+				$(".face.front").each(function(){
+					$(this).css("background",$(this).data("bgcolor"));
+					$(this).html($(this).data("bgcolor"));
+				});
+				$("a[rel='external']").attr("target", "_blank");
+			});
+</script>
