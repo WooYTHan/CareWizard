@@ -348,12 +348,14 @@ font-weight: normal;
 }
 
 .story{
-font-style: normal;
-font-weight: normal;
-line-height: 24px;
-font-size: 12px;
-color: #333333;
- width: 240px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    font-size: 11px;
+    color: #333333;
+    width: 240px;
+    text-align: left;
+    padding: 13px;
 
 }
 
@@ -532,8 +534,8 @@ a.navbar-brand {
 
 
 button.btn.dropdown-toggle.btn-light {
-    padding-top: 3px;
-    padding-bottom: 3px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .card-body {
@@ -554,14 +556,15 @@ a.dropdown-item {
 	align-items: center;
 	-webkit-flex-direction: column;
 	flex-direction: column;
-	border:2px solid #eee;
-	border-radius: 5px;
+	border-radius: 3px;
+	    padding: 12px !important;
 }
 
 .stack__item img {
-    width: 60%;
+      width: 150px;
     display: block;
     pointer-events: none;
+    margin-left: 34px;
 }
 
 .stack {
@@ -573,26 +576,44 @@ button.button.button--sonar.button--reject {
     font-size: 12px;
         font-family: Karla;
     text-transform: uppercase;
-        width:100px;
         color:#0eb5b1;
-            border: 1px solid;
-    border-radius: 2px;
     padding: 0px !important;
     line-height: 23px;
-    height: inherit;
+        width: 15px !important;
+    height: 15px !important;
+    background: #0eb5b1;
+    border-radius: 50%;
+     border: 2px solid #fff;
+             transition:0.5s;
+
 }
 
 button.button.button--sonar.button--accept {
-    font-size: 12px;
+       font-size: 12px;
         font-family: Karla;
     text-transform: uppercase;
-    width:100px;
-    color:#ffcf56;
-        border: 1px solid;
-    border-radius: 2px;
+        color:#0eb5b1;
     padding: 0px !important;
     line-height: 23px;
-    height: inherit;
+        width: 15px !important;
+    height: 15px !important;
+    background: #ffcf56;
+    border-radius: 50%;
+        border: 2px solid #fff;
+             transition:0.5s;
+
+}
+
+button.button.button--sonar.button--reject:hover {
+
+     border: 2px solid #9FE9E6;
+             transition:0.5s;
+}
+
+button.button.button--sonar.button--accept:hover {
+        border: 2px solid #FFE4A2;
+             transition:0.5s;
+
 }
 
 .controls {
@@ -608,11 +629,7 @@ button.button.button--sonar.button--accept {
   background: #fff;
   box-shadow:
     /* The top layer shadow */
-    0 -1px 1px rgba(0,0,0,0.15),
-    /* The second layer */
-    0 -10px 0 -5px #eee,
-    /* The second layer shadow */
-    0 -10px 1px -4px rgba(0,0,0,0.15),
+   0px 0px 20px rgba(0, 0, 0, 0.1),
      /* The third layer */
     0 -20px 0 -10px #eee,
     /* The third layer shadow */
@@ -621,3 +638,18 @@ button.button.button--sonar.button--accept {
     padding: 30px;
 }
 
+.cardttl{
+	    backface-visibility: hidden;
+    text-transform: uppercase;
+    font-size: 16px !important;
+    text-align: left;
+    font-weight: 700;
+}
+
+.onechoice{
+	width: 200px;
+}
+
+.important{
+	color:#0eb5b1;
+}
