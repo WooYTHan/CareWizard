@@ -231,13 +231,15 @@ var tooltip = d3.select("body").append("div").attr("class", "toolTip");
       .style("stroke-width", "2px")
       .style("stroke", cfg.color(series)).style("fill-opacity", .9)
       .on('mouseover', function (d){
-            d3.select(this).attr('class');
+            var c = d3.select(this).attr('class').split("radar-chart-serie")[1];
             d3.select(this).attr('r', 5);
             tooltip
               .style("left", (d3.event.pageX + 10) + "px")
               .style("top", (d3.event.pageY - 20) + "px")
               .html("<span>" + (d.value) + "/5</span>")
+              .style("color",cfg.color(c))
               .style("display", "inline")
+              .style("background-color", "rgba(255,255,255,0.4)")
             })
             .on("mouseout", function(d){ d3.select(this).attr('r', 1);tooltip.style("display", "none");});
 
