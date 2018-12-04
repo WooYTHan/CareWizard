@@ -9,6 +9,31 @@ body {
 
 }
 
+input:focus{
+    outline: none;
+}
+
+*:focus {
+    outline: none;
+}
+button#costbtn3 {
+    outline: none;
+}
+button#costbtn {
+      outline: none;
+}
+button#costbtn22 {
+    outline: none !important;
+}
+
+button.btn.dropdown-toggle.btn-light {
+    outline: none !important; 
+}
+
+button#thebutton {
+    outline: none !important;
+}
+
 .storyimg{
       width: 200px;
 }
@@ -123,7 +148,7 @@ padding-top:10px;
 }
 
 .filter{
-  height: 700px;
+  height: 740px;
   background-color: white;
 box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);  float: left;
   position: fixed;
@@ -180,8 +205,8 @@ padding-right:33px;
 }
 
 .subDiv .cont{
-  font-size: 10px;
-  margin: 0px;
+    font-size: 12px;
+    margin: 0px;
 }
 .stress{
  height: 580px;
